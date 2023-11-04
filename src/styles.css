@@ -219,6 +219,47 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+.keyboard-wrapper {
+  gap: 10px;
+  padding: 4px;
+}
+
+.keyboard-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.key-cell {
+  padding: 8px;
+  padding-bottom: 2px;
+  display: grid;
+  place-content: center;
+  border-radius: 4px;
+  min-width: 10%;
+  aspect-ratio: 1 / 1;
+  background: var(--color-gray-900);
+}
+
+.key-cell.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.key-cell.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.key-cell.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
+
+
 /*
   Keyframe animations
 */
